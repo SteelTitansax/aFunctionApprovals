@@ -19,9 +19,9 @@ def aFunctionApprovals(req: func.HttpRequest) -> func.HttpResponse:
         # Graph Authentication details
         # ----------------------------
     
-        app_id = '92ee2d9c-3f39-4c07-90d3-8d96445ad818'  # Application Id - on the azure app overview page
-        client_secret = 'mrv8Q~mhLP5p5Qbl2YKIHKqEp.Qcxaw1C1_Ppcq6'  # SecretValue Id
-        tenantId = 'e9112c5c-e4bb-4ab9-8b4c-3692f43531a7'  # Tenant Id of Azure Suscription
+        app_id = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  # Application Id - on the azure app overview page
+        client_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  # SecretValue Id
+        tenantId = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  # Tenant Id of Azure Suscription
 
         # Use the redirect URL to create a token url
         token_url = 'https://login.microsoftonline.com/' + tenantId + '/oauth2/token'
