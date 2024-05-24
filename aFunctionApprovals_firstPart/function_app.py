@@ -4,6 +4,7 @@ import pandas as pd
 #import pyodbc
 import datetime
 import logging
+import time
 import azure.functions as func
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
@@ -336,7 +337,8 @@ def aFunctionApprovals(req: func.HttpRequest) -> func.HttpResponse:
         adaptative_card_json = adaptative_card_json.replace('{DateTravelEnds}', travelEnds)
         adaptative_card_json = adaptative_card_json.replace('{TextTravelCommentsValue}', travelComments)
 
-
+        time.sleep(10)        
+        
         email_response = sendMail(adaptative_card_json)
         
         # Verify answer
